@@ -7,7 +7,9 @@
 
 A web-based application for students to record daily activities during industrial attachment, with supervisor monitoring and admin management.
 
-![Login Page Screenshot](https://via.placeholder.com/800x400?text=Login+Screenshot+Placeholder)
+**![LoginPage](/images/Login.png)**
+*Figure 4.1: Login Page – Users enter email and password.*
+
 
 ---
 
@@ -114,7 +116,7 @@ $db_name = 'logbook_db';
 - Open your browser and go to `http://localhost/LogBook`
 - Default admin credentials (if you imported sample data):
   - Email: `admin@example.com`
-  - Password: `admin123`
+  - Password: `password`
 
 ---
 
@@ -132,7 +134,7 @@ chmod -R 755 /path/to/LogBook
 
 ---
 
-## 🌐 Live Deployment (InfinityFree)
+<!-- ## 🌐 Live Deployment (InfinityFree)
 
 ### Step 1: Sign Up at InfinityFree
 - Go to [InfinityFree.net](https://www.infinityfree.net/) and create a free account.
@@ -167,7 +169,7 @@ $db_name = 'if0_12345678_logbook_db';   // full database name with prefix
 
 ### Step 7: Test Your Live Site
 - Visit `http://yourproject.infinityfreeapp.com`
-- Log in with existing credentials or use the default admin account.
+- Log in with existing credentials or use the default admin account. -->
 
 ---
 
@@ -236,16 +238,32 @@ LogBook/
 *Add your own screenshots here.*
 
 ### Login Page
-![Login](https://via.placeholder.com/800x400?text=Login+Screenshot)
+**![LoginPage](/images/Login.png)**
+*Figure 4.1: Login Page – Users enter email and password.*
 
 ### Admin Dashboard
-![Admin Dashboard](https://via.placeholder.com/800x400?text=Admin+Dashboard)
+**![Admin Dashboard](/images/AdminDashboard.png)**  
+*Figure 4.2: Admin Dashboard – Options to manage users and assign supervisors.*
 
 ### Manage Users
-![Manage Users](https://via.placeholder.com/800x400?text=Manage+Users)
+**![ Manage Users Page](/images/ManageUsers.png)**  
+*Figure 4.3: Admin can view, add, edit, delete users.*
+
+### Assign Supervisor
+**![Assign Supervisor Page](/images/AssignSupervisor.png)**  
+*Figure 4.4: Admin assigns a supervisor to a student.*
 
 ### Student Dashboard
-![Student Dashboard](https://via.placeholder.com/800x400?text=Student+Dashboard)
+**![ Student Dashboard](/images/StudentDashboard.png)**  
+*Figure 4.5: Student can add new logs and view existing logs with comments.*
+
+### Supervisor Dashboard
+**![Supervisor Dashboard](/images/SupervisorDashboard.png)**  
+*Figure 4.6: Supervisor sees assigned students and can view their logs.*
+
+### View Student Logs (Supervisor)
+**![View Student Logs (Supervisor)](/images/LogReview.png)**  
+*Figure 4.7: Supervisor views logs and adds comments.*
 
 ---
 

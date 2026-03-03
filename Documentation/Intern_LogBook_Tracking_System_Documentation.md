@@ -222,25 +222,25 @@ The system follows a client‑server architecture. The client (browser) sends HT
 
 ### 4.4 User Interfaces
 
-**[Insert Screenshot 1: Login Page]**  
+**![LoginPage](/images/Login.png)**
 *Figure 4.1: Login Page – Users enter email and password.*
 
-**[Insert Screenshot 2: Admin Dashboard]**  
+**![Admin Dashboard](/images/AdminDashboard.png)**  
 *Figure 4.2: Admin Dashboard – Options to manage users and assign supervisors.*
 
-**[Insert Screenshot 3: Manage Users Page]**  
+**![ Manage Users Page](/images/ManageUsers.png)**  
 *Figure 4.3: Admin can view, add, edit, delete users.*
 
-**[Insert Screenshot 4: Assign Supervisor Page]**  
+**![Assign Supervisor Page](/images/AssignSupervisor.png)**  
 *Figure 4.4: Admin assigns a supervisor to a student.*
 
-**[Insert Screenshot 5: Student Dashboard]**  
+**![ Student Dashboard](/images/StudentDashboard.png)**  
 *Figure 4.5: Student can add new logs and view existing logs with comments.*
 
-**[Insert Screenshot 6: Supervisor Dashboard]**  
+**![Supervisor Dashboard](/images/SupervisorDashboard.png)**  
 *Figure 4.6: Supervisor sees assigned students and can view their logs.*
 
-**[Insert Screenshot 7: View Student Logs (Supervisor)]**  
+**![View Student Logs (Supervisor)](/images/LogReview.png)**  
 *Figure 4.7: Supervisor views logs and adds comments.*
 
 ### 4.5 Code Structure
@@ -350,7 +350,26 @@ The Student Internship LogBook System successfully achieves its objectives. It p
 
 ### Appendix B: Sample Screenshots
 
-*(Insert screenshots as described in Chapter 4.4. Label them appropriately.)*
+**![LoginPage](/images/Login.png)**
+*Figure 4.1: Login Page – Users enter email and password.*
+
+**![Admin Dashboard](/images/AdminDashboard.png)**  
+*Figure 4.2: Admin Dashboard – Options to manage users and assign supervisors.*
+
+**![ Manage Users Page](/images/ManageUsers.png)**  
+*Figure 4.3: Admin can view, add, edit, delete users.*
+
+**![Assign Supervisor Page](/images/AssignSupervisor.png)**  
+*Figure 4.4: Admin assigns a supervisor to a student.*
+
+**![ Student Dashboard](/images/StudentDashboard.png)**  
+*Figure 4.5: Student can add new logs and view existing logs with comments.*
+
+**![Supervisor Dashboard](/images/SupervisorDashboard.png)**  
+*Figure 4.6: Supervisor sees assigned students and can view their logs.*
+
+**![View Student Logs (Supervisor)](/images/LogReview.png)**  
+*Figure 4.7: Supervisor views logs and adds comments.*
 
 ### Appendix C: Viva Preparation Questions and Answers
 
