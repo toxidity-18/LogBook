@@ -179,6 +179,9 @@ The system follows a three‑tier architecture:
 - **Business Logic Tier:** PHP scripts handling user requests, session management, and data processing.
 - **Data Tier:** MySQL database storing all persistent data.
 
+**![FlowchartDiagram](/images/FlowchartDiagram.png)**
+*Figure 3.2: System Flowchart of User Interactions*
+
 ### 3.5 Database Design
 
 The database `logbook_db` consists of four tables:
@@ -187,6 +190,9 @@ The database `logbook_db` consists of four tables:
 - **assignments:** Links students and supervisors (student_id, supervisor_id, assigned_date).
 - **logs:** Stores student log entries (id, student_id, log_date, description, hours, created_at).
 - **comments:** Stores supervisor comments on logs (id, log_id, supervisor_id, comment_text, created_at).
+
+**![EntityRelationshipDiagram](/images/EntityRelationshipDiagram.png)**
+*Figure 3.1: Entity Relationship Diagram of the LogBook Database*
 
 Foreign keys ensure data integrity (e.g., a comment cannot exist without a log).
 

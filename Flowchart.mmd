@@ -1,0 +1,58 @@
+flowchart TD
+    Start([Start]) --> LoginPage[Login Page]
+    LoginPage --> |Enter credentials| LoginProcess{Login Process}
+    LoginProcess --> |Invalid| LoginPage
+    LoginProcess --> |Valid| RoleCheck{Role Check}
+    
+    RoleCheck --> |Admin| AdminDash[Admin Dashboard]
+    RoleCheck --> |Supervisor| SupervisorDash[Supervisor Dashboard]
+    RoleCheck --> |Student| StudentDash[Student Dashboard]
+    
+    %% Admin flows
+    AdminDash --> AdminMenu{Choose action}
+    AdminMenu --> |Manage Users| ManageUsers[Manage Users Page]
+    AdminMenu --> |Assign Supervisor| AssignSuper[Assign Supervisor Page]
+    
+    ManageUsers --> |Add User| AddUser[Add User Form]
+    ManageUsers --> |Edit User| EditUser[Edit User Form]
+    ManageUsers --> |Delete User| DeleteUser[Delete User]
+    
+    AssignSuper --> AssignProcess[Assign Supervisor to Student]
+    
+    %% Supervisor flows
+    SupervisorDash --> ViewStudents[View Assigned Students]
+    ViewStudents --> SelectStudent[Select a Student]
+    SelectStudent --> ViewLogs[View Student Logs]
+    ViewLogs --> CheckComment{Comment exists?}
+    CheckComment --> |No| AddComment[Add Comment Form]
+    CheckComment --> |Yes| ViewComment[View Existing Comment]
+    AddComment --> SubmitComment[Submit Comment]
+    
+    %% Student flows
+    StudentDash --> StudentMenu{Choose action}
+    StudentMenu --> |Add Log| AddLogForm[Add Log Form]
+    StudentMenu --> |View My Logs| ViewMyLogs[View My Logs]
+    StudentMenu --> |Edit Log| EditLog[Edit Log Form]
+    StudentMenu --> |Delete Log| DeleteLog[Delete Log]
+    
+    ViewMyLogs --> DisplayLogs[Display Logs with Comments]
+    AddLogForm --> SubmitLog[Submit Log]
+    EditLog --> UpdateLog[Update Log]
+    DeleteLog --> ConfirmDelete{Confirm?}
+    ConfirmDelete --> |Yes| RemoveLog[Log Deleted]
+    ConfirmDelete --> |No| Cancel
+    
+    %% Common end
+    Logout[Logout] --> Start
+    AdminDash --> Logout
+    SupervisorDash --> Logout
+    StudentDash --> Logout
+    AddUser --> ManageUsers
+    EditUser --> ManageUsers
+    DeleteUser --> ManageUsers
+    AssignProcess --> AssignSuper
+    SubmitComment --> ViewLogs
+    SubmitLog --> ViewMyLogs
+    UpdateLog --> ViewMyLogs
+    RemoveLog --> ViewMyLogs
+    Cancel --> StudentDash

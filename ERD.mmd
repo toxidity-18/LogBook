@@ -1,0 +1,43 @@
+## Database ER Diagram
+
+```mermaid
+erDiagram
+    USERS {
+        int id PK
+        string name
+        string email
+        string password
+        enum role
+        timestamp created_at
+    }
+    
+    LOGS {
+        int id PK
+        int student_id FK
+        date log_date
+        text description
+        decimal hours
+        timestamp created_at
+    }
+    
+    COMMENTS {
+        int id PK
+        int log_id FK
+        int supervisor_id FK
+        text comment_text
+        timestamp created_at
+    }
+    
+    ASSIGNMENTS {
+        int id PK
+        int student_id FK
+        int supervisor_id FK
+        date assigned_date
+    }
+    
+    USERS ||--o{ LOGS : submits
+    USERS ||--o{ COMMENTS : writes
+    LOGS ||--o{ COMMENTS : receives
+    USERS ||--o{ ASSIGNMENTS : "is student in"
+    USERS ||--o{ ASSIGNMENTS : "is supervisor in"
+```

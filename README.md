@@ -237,6 +237,15 @@ LogBook/
 
 *Add your own screenshots here.*
 
+
+### Entity Relationship Diagram
+**![EntityRelationshipDiagram](/images/EntityRelationshipDiagram.png)**
+*Figure 3.1: Entity Relationship Diagram of the LogBook Database*
+
+### Flowchart Diagram
+**![FlowchartDiagram](/images/FlowchartDiagram.png)**
+*Figure 3.2: System Flowchart of User Interactions*
+
 ### Login Page
 **![LoginPage](/images/Login.png)**
 *Figure 4.1: Login Page – Users enter email and password.*
@@ -264,6 +273,10 @@ LogBook/
 ### View Student Logs (Supervisor)
 **![View Student Logs (Supervisor)](/images/LogReview.png)**  
 *Figure 4.7: Supervisor views logs and adds comments.*
+
+### Entity Relationship Diagram
+
+
 
 ---
 
